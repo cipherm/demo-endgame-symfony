@@ -1,0 +1,70 @@
+<section class="dct-sub-header-wrapper {% if template == end_game_template %} endgame-sub-header-wrapper {% endif %}">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>Auf dieser Website werden Daten wie Cookies gespeichert, um wichtige Funktionen der Website zu ermöglichen. <a class="dct-btn-small" href="#">Akzeptieren</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<header class="dct-header-wrapper-main {% if template == end_game_template %} endgame-header-wrapper {% endif %} ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-light row">
+                    <div class="col-md-2">
+                        <a class="navbar-brand" href="#"><img src={% if template == end_game_template %} {{ asset('images/eg-logo.svg') }} {% else %} {{ asset('images/logo.svg') }} {% endif %}    alt="" /></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="collapse navbar-collapse row" id="navbarText">
+                            <div class="col-md-10">
+                                <ul class="navbar-nav navbar-nav d-flex justify-content-center">
+                                    {% if template == end_game_template %}
+                                        <li class="nav-item">
+                                            <a class="nav-link" aria-current="page" href="#">Mäuse</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Mauspads</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Zubehör</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Downloads</a>
+                                        </li>
+                                    {% else %}
+                                        <li class="nav-item">
+                                            <a class="nav-link" aria-current="page" href="#">Premium Stühle</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Limited Editions</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Zubehör</a>
+                                        </li>
+                                    {% endif %}
+
+                                </ul>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="dct-cart-list-wrapper">
+                                    <a href="#">
+                                        <i class="fa fa-user"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+</header>

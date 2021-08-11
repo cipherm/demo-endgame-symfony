@@ -1,0 +1,102 @@
+<footer class="dct-ft-wrapper-main {% if template == end_game_template %}eg-ft-wrapper-main {% endif %}">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <span class="dct-ft-divider"></span>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-3">
+                <div class="common-ft-col dct-ft-second-col">
+                    <h4>Shop</h4>
+                    <ul class="common-ft-menu-list">
+                        {% if template == end_game_template %}
+                            <li><a href="#">Mäuse</a></li>
+                            <li><a href="#">Mauspads</a></li>
+                            <li><a href="#">Zubehör</a></li>
+                            <li><a href="#">Downloads</a></li>
+                        {% else %}
+                            <li><a href="#">Premium chairs</a></li>
+                            <li><a href="#">Limited editions</a></li>
+                            <li><a href="#">accesories</a></li>
+                        {% endif %}
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="common-ft-col dct-ft-third-col">
+                    <h4>information</h4>
+                    <ul class="common-ft-menu-list">
+                        {% if template == end_game_template %}
+                            <li><a href="#">Rückgabe</a></li>
+                            <li><a href="#">International resellers</a></li>
+                        {% else %}
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">return</a></li>
+                            <li><a href="#">International resellers</a></li>
+                        {% endif %}
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="common-ft-col dct-ft-third-col">
+                    <h4>language</h4>
+                    <select class="common-ft-select-list">
+                        <option>German</option>
+                        <option>English</option>
+                    </select>
+                    <h4>Shipping to</h4>
+                    <select class="common-ft-select-list">
+                        <option>Germany</option>
+                        <option>Austria</option>
+                        <option>Switzerland</option>
+                        <option>France</option>
+                        <option>United Kingdom</option>
+                        <option>Finland</option>
+                        <option>Portugal</option>
+                        <option>Netherlands</option>
+                        <option>Belgium</option>
+                        <option>Luxembourg</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="common-ft-col dct-ft-fourth-col">
+                    <h4>pay with</h4>
+                    <ul class="common-ft-pay-list">
+                        <li><img src={{ asset('images/paypal.png') }} class="paypal" alt="" /></li>
+                        <li><img src={{ asset('images/visa.png') }} class="visa" alt="" /></li>
+                        <li><img src={{ asset('images/mastercard.png') }} class="mastercard" alt="" /></li>
+                        <li><img src={{ asset('images/maestro.png') }} class="maestro" alt="" /></li>
+                    </ul>
+                    <ul class="common-ft-social-list">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="copy-right-text-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <ul>
+                    <li><a href="#">Imprint</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Jobs</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <p>© noblechairs 2021</p>
+            </div>
+        </div>
+    </div>
+</div>

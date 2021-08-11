@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'la Compagnie des Ombres';
+    src: url('../fonts/laCompagniedesOmbres.eot');
+    src: url('../fonts/laCompagniedesOmbres.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/laCompagniedesOmbres.woff2') format('woff2'),
+    url('../fonts/laCompagniedesOmbres.woff') format('woff'),
+    url('../fonts/laCompagniedesOmbres.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
